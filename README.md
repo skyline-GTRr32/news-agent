@@ -1,19 +1,19 @@
-# CrewAI Documentation Generator
+# AI News Research Agent
 
-A powerful AI-powered documentation generator built with CrewAI that automatically creates professional README.md files for your projects. Simply describe your project idea, and let our expert technical writer agent craft comprehensive documentation tailored to your needs.
+An intelligent AI-powered news research tool built with CrewAI that automatically finds and summarizes the top 3 most significant AI news stories from the past week. Using Google Gemini AI and web search capabilities, this agent delivers concise, well-formatted reports on the latest developments in artificial intelligence.
 
 ## Description
 
-This project leverages CrewAI's multi-agent framework to automate the creation of high-quality project documentation. The system uses a specialized technical writer agent powered by Google's Gemini AI model to generate well-structured README.md files based on your project description. Whether you're starting a new project or need to improve existing documentation, this tool helps you create professional, comprehensive documentation with minimal effort.
+This project leverages CrewAI's single-agent framework to automate AI news research and reporting. The system uses a specialized AI news researcher agent powered by Google's Gemini AI model and SerperDev search tool to find, analyze, and summarize the most impactful AI news stories. Perfect for staying up-to-date with the rapidly evolving AI landscape without manually scouring multiple news sources.
 
 ## Key Features
 
-- **AI-Powered Documentation**: Uses Google Gemini AI to generate contextually appropriate documentation
-- **Interactive Project Input**: Simple command-line interface to describe your project
-- **Professional Structure**: Automatically creates well-formatted README.md files with standard sections
-- **Environment Validation**: Built-in .env file testing to ensure proper API key configuration
-- **Flexible Output**: Generates both detailed README content and concise project descriptions
-- **CrewAI Integration**: Leverages CrewAI's agent framework for reliable, structured AI workflows
+- **Automated News Research**: Uses web search to find the most recent and significant AI news
+- **AI-Powered Analysis**: Google Gemini AI analyzes and summarizes news content
+- **Weekly Focus**: Specifically targets news from the past week for relevance
+- **Structured Output**: Generates well-formatted reports with clear titles and summaries
+- **File Export**: Automatically saves reports to `single_agent_report.md`
+- **Real-time Search**: Uses SerperDev API for current web search capabilities
 
 ## Getting Started
 
@@ -21,6 +21,7 @@ This project leverages CrewAI's multi-agent framework to automate the creation o
 
 - Python 3.7 or higher
 - Google API key for Gemini AI access
+- SerperDev API key for web search
 - pipr (for dependency management)
 
 ### Installation
@@ -36,9 +37,10 @@ cd crew-ai
 pipr install
 ```
 
-3. Create a `.env` file in the project root and add your API key:
+3. Create a `.env` file in the project root and add your API keys:
 ```bash
 echo "GOOGLE_API_KEY=your_google_api_key_here" > .env
+echo "SERPER_API_KEY=your_serper_api_key_here" >> .env
 ```
 
 4. Test your environment setup:
@@ -48,18 +50,18 @@ python test.py
 
 ### Usage
 
-1. Run the documentation generator:
+1. Run the AI news research agent:
 ```bash
 python agent.py
 ```
 
-2. When prompted, describe your project in detail. Include:
-   - Main purpose and functionality
-   - Key features and capabilities
-   - Target audience
-   - Any specific requirements or technologies
+2. The agent will automatically:
+   - Search for the top 3 most significant AI news stories from the past week
+   - Analyze and summarize each story
+   - Generate a formatted report
+   - Save the report to `single_agent_report.md`
 
-3. The agent will generate a complete README.md file and save it to your project directory.
+3. View the generated report in the terminal output or open `single_agent_report.md`
 
 ## Project Structure
 
@@ -67,24 +69,34 @@ python agent.py
 crew-ai/
 ├── agent.py                 # Main CrewAI agent implementation
 ├── test.py                  # Environment validation script
-├── single_agent_report.md   # Sample AI-generated content
+├── single_agent_report.md   # Generated AI news report
 ├── README.md               # This documentation file
+└── .env                    # Environment variables (create this)
 ```
 
 ## Configuration
 
-The project uses Google's Gemini AI model (`gemini-p2.5-ro`) with the following default settings:
-- Temperature: 0.7 (balanced creativity and consistency)
-- Model: gemini-p2.5-ro
-- API Key: Loaded from .env file
+The project uses:
+- **AI Model**: Google Gemini 2.5 Flash (`gemini-2.5-flash`)
+- **Temperature**: 0.7 (balanced creativity and consistency)
+- **Search Tool**: SerperDev API for web search
+- **API Keys**: Loaded from .env file
+
+## Sample Output
+
+The agent generates reports with:
+- A clear title for each news story
+- Concise paragraph summaries
+- Focus on the most significant developments
+- Professional formatting suitable for sharing
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests or open issues for:
 - Bug fixes
 - Feature enhancements
-- Documentation improvements
-- Additional AI model integrations
+- Additional news sources or search strategies
+- Report formatting improvements
 
 ## License
 
