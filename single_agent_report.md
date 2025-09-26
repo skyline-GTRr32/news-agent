@@ -1,0 +1,10 @@
+**Top 3 Significant AI News Stories from the Past Week**
+
+**SoftBank CEO Predicts Artificial Super Intelligence (ASI) in 10 Years**
+Masayoshi Son, CEO of SoftBank, has made a bold prediction, stating that Artificial Super Intelligence (ASI) will emerge within the next decade, surpassing human intelligence by 10,000 times. Son emphasized that this advancement would make Artificial General Intelligence (AGI) seem like a mere stepping stone. This forecast highlights a growing sentiment among some tech leaders about the rapid acceleration of AI capabilities and the potential for transformative societal changes in the near future.
+
+**Alibaba Boosts AI Investment and Launches Qwen3-Max Model**
+Chinese tech giant Alibaba has significantly increased its commitment to artificial intelligence, announcing an investment exceeding $53 billion, surpassing its initial targets. This substantial financial backing coincides with the rollout of its new flagship AI model, Qwen3-Max. Reportedly ranking among the top three globally, the Qwen3-Max model is designed for advanced capabilities in areas such as code generation and is seen as a crucial step in Alibaba's ambition to dominate the AI landscape in China and compete with global leaders. The news led to a surge in Alibaba's stock.
+
+**Google's Veo 3 AI Video Creation Tools Now Widely Available**
+Google has made its advanced Veo 3 AI video creation tools more widely accessible, empowering creators to generate high-quality, realistic videos from simple text prompts or images. Veo 3 and its faster counterpart, Veo 3 Fast, offer sophisticated features including the ability to generate native audio (sound effects, ambient noise, and dialogue) alongside video content. This development marks a significant leap in generative AI for video, providing creators with powerful tools to produce cinematic and detailed visual narratives with unprecedented ease.
