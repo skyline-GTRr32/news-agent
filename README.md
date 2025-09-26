@@ -28,7 +28,7 @@ This project leverages CrewAI's single-agent framework to automate AI news resea
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/skyline-GTRr32/research-agent-.git
 cd crew-ai
 ```
 
